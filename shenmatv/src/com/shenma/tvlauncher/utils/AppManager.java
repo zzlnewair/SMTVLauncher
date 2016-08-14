@@ -5,7 +5,6 @@ import java.io.IOException;
 
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.IPackageInstallObserver;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.RemoteException;
@@ -26,19 +25,19 @@ public class AppManager {
 	 * @param callback 返回状态
 	 */
 	public void install(String strFile, final StatusCallBack callback) {
-		Uri mPackageURI = Uri.fromFile(new File(strFile));
-		int installFlags = PackageManager.INSTALL_REPLACE_EXISTING;
-		IPackageInstallObserver installObserver = new IPackageInstallObserver.Stub() {
-
-			@Override
-			public void packageInstalled(String packageName, int returnCode) throws RemoteException {
-				if (callback != null) {
-					callback.onResult(returnCode == PackageManager.INSTALL_SUCCEEDED, packageName);
-				}
-			}
-		};
-		String mPackageName = Utils.getPackageName(mContext, strFile);
-		pm.installPackage(mPackageURI, installObserver, installFlags, mPackageName);
+//		Uri mPackageURI = Uri.fromFile(new File(strFile));
+//		int installFlags = PackageManager.INSTALL_REPLACE_EXISTING;
+//		IPackageInstallObserver installObserver = new IPackageInstallObserver.Stub() {
+//
+//			@Override
+//			public void packageInstalled(String packageName, int returnCode) throws RemoteException {
+//				if (callback != null) {
+//					callback.onResult(returnCode == PackageManager.INSTALL_SUCCEEDED, packageName);
+//				}
+//			}
+//		};
+//		String mPackageName = Utils.getPackageName(mContext, strFile);
+//		pm.installPackage(mPackageURI, installObserver, installFlags, mPackageName);
 	}
 	
 	/**

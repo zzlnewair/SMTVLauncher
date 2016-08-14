@@ -28,7 +28,6 @@ import android.content.SharedPreferences.Editor;
 import android.graphics.drawable.ColorDrawable;
 import android.media.AudioManager;
 import android.net.TrafficStats;
-import android.nfc.LlcpPacket;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
