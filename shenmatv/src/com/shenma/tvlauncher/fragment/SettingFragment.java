@@ -25,7 +25,7 @@ import com.shenma.tvlauncher.SettingActActvity;
 import com.shenma.tvlauncher.SettingPlayActivity;
 import com.shenma.tvlauncher.SettingRemoteActivity;
 import com.shenma.tvlauncher.SettingWallpaperActivity;
-import com.shenma.tvlauncher.SettingWifiActivity;
+//import com.shenma.tvlauncher.SettingWifiActivity;
 import com.shenma.tvlauncher.utils.ScaleAnimEffect;
 import com.shenma.tvlauncher.utils.Utils;
 /**
@@ -249,8 +249,8 @@ public class SettingFragment extends BaseFragment implements OnFocusChangeListen
 			startActivity(mIntent);
 			break;
 		case R.id.setting_iv_network:
-			mIntent.setClass(getActivity(), SettingWifiActivity.class);
-			startActivity(mIntent);
+			//mIntent.setClass(getActivity(), SettingWifiActivity.class);
+			//startActivity(mIntent);
 			break;
 		case R.id.setting_iv_play:
 			mIntent.setClass(getActivity(), SettingPlayActivity.class);
